@@ -37,7 +37,120 @@ nav{
 
 
 /* created by vedant */
+h1,
+p,
+h2 {
+  margin: 0;
+}
 
+section.firstsec {
+  max-width: 1024px;
+  margin: auto;
+  padding: 200px 20px 20px 20px;
+  display: flex;
+  gap: 150px;
+  color: white;
+  flex-wrap: wrap;
+
+
+}
+
+.firstsec>div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  padding: 20px;
+}
+
+#pos>div {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 20px;
+  gap: 20px;
+  position: absolute;
+  height: 300px;
+  animation: a1 2s forwards;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(29, 33, 36, 0.5);
+
+}
+
+@keyframes a1 {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+body {
+  background-color: #100720;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.firstsec>div>h1 {
+  font-size: 50px;
+  max-width: 450px;
+  font-weight: bold;
+
+}
+.firstsec>div>p{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+div#pos>div p {
+  color: white;
+  font-size: 20px;
+  max-width: 350px;
+  text-align: center;
+}
+
+button {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: 2px solid red;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+#pos {
+  position: relative;
+  height: 500px;
+
+}
+
+div#pos>div h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.get_butt {
+  margin-left: 9%;
+  width: 300px;
+}
 
 
 
