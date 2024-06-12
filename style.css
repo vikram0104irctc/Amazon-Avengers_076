@@ -3,6 +3,8 @@
 body{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header{
@@ -32,17 +34,31 @@ header{
 
 /* created by manish */
 
+@keyframes noon{
+  30%{
+    background-color: black;
+    border-radius: 30px;
+  }
+  100%{
+    background-color: black;
+    border-radius: 30px;
+  }
+}
 nav{
   position: fixed;
     top: 0px;
-
+    animation: noon ;
+    animation-timeline: scroll();
+    z-index: 10;
 }
+
+
 
 #navbox{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 180px;
   padding: 15px 0px 15px 0px;
   font-family: "Roboto", sans-serif;
   
@@ -169,14 +185,6 @@ section.firstsec {
   }
 }
 
-body {
-  background-color: #100720;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-
-}
 
 .firstsec>div>h1 {
   font-size: 50px;
@@ -196,18 +204,19 @@ div#pos>div p {
   text-align: center;
 }
 
-button {
+#firstbtn {
   width: 165px;
   height: 62px;
   cursor: pointer;
   color: #fff;
   font-size: 17px;
   border-radius: 1rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
   background: #100720;
   transition: 0.1s;
 }
+
 
 #pos {
   position: relative;
@@ -233,3 +242,11 @@ div#pos>div h2 {
   width: 100%;
   height: 100%;
 }
+
+main{
+  background: linear-gradient(180deg, blue, gray);
+}
+
+
+
+
