@@ -1,0 +1,44 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background-image: url("vecteezy_businessman-holding-global-internet-connection-technology_7252575.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.for_head{
+  max-width: 1024px;
+  margin: auto;
+}
+
+nav{
+  max-width: 1024px;
+  padding: 0px 15px;
+}
+
+.firstsec{
+  max-width: 1024px;
+  padding: 0px 15px;
+}
+
+.secondsec{
+  max-width: 1024px;
+  padding: 0px 15px;
+}
+
+
+/* created by manish */
+
+
+
+
+/* created by vedant */
+
+
+
+
+/* created by anubhav */
