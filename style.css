@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
-header{
+header {
   background-image: url("./assetss/vecteezy_businessman-holding-global-internet-connection-technology_7252575.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 
-.for_head{
+.for_head {
   max-width: 1024px;
   margin: auto;
 }
 
 
-.firstsec{
+.firstsec {
   max-width: 1024px;
   padding: 0px 15px;
 }
 
-.secondsec{
+.secondsec {
   max-width: 1024px;
   padding: 0px 15px;
 }
@@ -31,26 +31,28 @@ header{
 
 /* created by manish */
 
-nav{
+nav {
   position: fixed;
-    top: 0px;
+  top: 0px;
 
 }
 
-#navbox{
+#navbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 100px;
   padding: 15px 0px 15px 0px;
   font-family: "Roboto", sans-serif;
-  
-  
+
+
 }
-#navbox a:hover{
+
+#navbox a:hover {
   color: rgb(200, 200, 200);
 }
-#navbox>div:nth-of-type(2){
+
+#navbox>div:nth-of-type(2) {
   display: flex;
   gap: 50px;
   text-decoration: none;
@@ -58,60 +60,187 @@ nav{
   font-weight: 500;
   font-size: 18px;
 }
-#navbox>div:nth-of-type(3){
+
+#navbox>div:nth-of-type(3) {
   display: flex;
   gap: 10px;
 }
-#navbox>div:nth-of-type(1)>img{
+
+#navbox>div:nth-of-type(1)>img {
   width: 100px;
   border-radius: 10px;
 }
-#navbox>div:nth-of-type(3) button{
+
+#navbox>div:nth-of-type(3) button {
   padding: 10px 15px;
   border-radius: 30px;
   color: rgb(251, 251, 251);
   border: 2px solid rgba(137, 43, 226, 0.79);
   background-color: rgba(137, 43, 226, 0.477);
 }
-#navbox>div:nth-of-type(3)>button:nth-of-type(1){
+
+#navbox>div:nth-of-type(3)>button:nth-of-type(1) {
   border: 2px solid rgba(160, 160, 160, 0.79);
   background-color: rgba(153, 153, 153, 0.477);
 }
-#navbox>div:nth-of-type(3)>button:nth-of-type(2){
+
+#navbox>div:nth-of-type(3)>button:nth-of-type(2) {
   border: 2px solid rgba(160, 160, 160, 0.79);
   background-color: rgba(153, 153, 153, 0.477);
 }
-#navbox>div:nth-of-type(3) button:hover{
+
+#navbox>div:nth-of-type(3) button:hover {
   background-color: rgba(94, 94, 94, 0.477);
 }
 
-#content>a{
+#content>a {
   font-size: 16px;
   padding: 5px 10px;
 }
-#content{
+
+#content {
   display: none;
   position: absolute;
   border: 2px solid rgba(160, 160, 160, 0.582);
   background-color: rgba(153, 153, 153, 0.214);
   border-radius: 10px;
 }
-#dropdown:hover #content{
-  display: block;
-}
-#content>a{
+
+#dropdown:hover #content {
   display: block;
 }
 
-@media(width<=700px){
-  #navbox>div:nth-of-type(2){
+#content>a {
+  display: block;
+}
+
+@media(width<=700px) {
+  #navbox>div:nth-of-type(2) {
     display: none;
   }
 
 }
+
 /* created by vedant */
 
+h1,
+p,
+h2 {
+  margin: 0;
+}
 
+section.firstsec {
+  max-width: 1024px;
+  margin: auto;
+  padding: 200px 20px 20px 20px;
+  display: flex;
+  gap: 150px;
+  color: white;
+  flex-wrap: wrap;
+
+
+}
+
+.firstsec>div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  padding: 20px;
+}
+
+#pos>div {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(29, 33, 36, 0.5);
+
+}
+
+@keyframes a1 {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+body {
+  background-color: #100720;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.firstsec>div>h1 {
+  font-size: 50px;
+  max-width: 450px;
+  font-weight: bold;
+
+}
+.firstsec>div>p{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+div#pos>div p {
+  color: white;
+  font-size: 20px;
+  max-width: 350px;
+  text-align: center;
+}
+
+button {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: 2px solid red;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+#pos {
+  position: relative;
+  height: 500px;
+
+}
+
+div#pos>div {
+  position: absolute;
+  height: 300px;
+  /* bottom: 0px; */
+  animation: a1 2s forwards;
+}
+
+div#pos>div h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.get_butt {
+  margin-left: 9%;
+  width: 300px;
+}
 
 
 /* created by anubhav */
