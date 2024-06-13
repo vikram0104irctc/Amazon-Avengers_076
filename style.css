@@ -356,15 +356,7 @@ nav {
   }
 }
 
-
-
-
 /* Created by manish */
-
-
-
-
-
 
 /* Created by vedant */
 
@@ -420,11 +412,19 @@ nav {
 
 .containerffff .back::before {
   position: absolute;
-  content: ' ';
+  content: " ";
   display: block;
   width: 160px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    transparent
+  );
   animation: rotation_481 5000ms infinite linear;
 }
 
@@ -561,27 +561,90 @@ nav {
   font-size: 30px;
 }
 
-
-
-
-
 /* Created by anubhav */
-#dashboard{
+#dashboard {
   text-align: center;
   color: white;
   font-size: 50px;
   padding: 5%;
   font-weight: 800;
-  text-decoration:underline;
-
+  text-decoration: underline;
 }
-.description>img{
+.description > img {
   height: 85%;
 }
 
+/* Created by manish */
 
-
-
-
+/* Created by manish */
+.blogme {
+  max-width: 1240px;
+  margin: 100px auto;
+  padding: 30px 0px;
+  /* background-color: #af40ff; */
+}
+.blogme > p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.blogcards {
+  margin: auto;
+  /* border: 2px solid; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.blogcards a {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.blogcards > div > div:nth-of-type(1) {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.blogcards img {
+  width: 400px;
+}
+.blogcards > div:hover img {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.blogcards > div > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.blogcards > div > div:nth-of-type(2) > p:nth-of-type(1) {
+  background-color: gray;
+  color: white;
+  padding: 1px;
+  margin: 0%;
+}
+.blogcards > div > div:nth-of-type(2) > p:nth-of-type(2) {
+  font-size: 12px;
+  color: gray;
+  margin: 0%;
+}
+@media (830px <= width <= 1220px) {
+  .blogcards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (width <= 829px) {
+  .blogcards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
 
 /* Created by Vikram */
