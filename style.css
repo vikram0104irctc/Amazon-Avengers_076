@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-image: url("./assetss/back\ image.jpg");
+  background-image: url("https://www.3eco.com/wp-content/uploads/2024/04/globe-hands-regulatory-trends-tracking.png");
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -32,7 +32,7 @@ header {
 }
 
 main {
-  background-color: #151515;;
+  background: linear-gradient(90deg,blue 10.19%, #0A0D0E 90.19%);
 }
 
 /* created by vedant */
@@ -80,17 +80,12 @@ section.firstsec {
 @keyframes a1 {
   0% {
     opacity: 0;
-    top: 100%;
-  }
-
-  50% {
-    opacity: 0.5;
-    top: 50%;
+    transform: translateY(150px);
   }
 
   100% {
     opacity: 1;
-    top: 0%;
+    transform: translateY(-0px);
   }
 }
 
@@ -381,6 +376,8 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   background-color: #151515;
+  border-radius: 20px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .containerffff .card {
@@ -437,7 +434,7 @@ nav {
   height: 99%;
   background-color: #151515;
   border-radius: 5px;
-  color: white;
+  color: orange;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,11 +477,13 @@ nav {
   border-radius: 10px;
   backdrop-filter: blur(2px);
   width: fit-content;
+  height: fit-content;
 }
 
 .containerffff .description {
   box-shadow: 0px 0px 10px 5px #00000088;
   width: 100%;
+  height: 100%;
   padding: 10px;
   background-color: #00000099;
   backdrop-filter: blur(5px);
@@ -492,10 +491,10 @@ nav {
 }
 
 .containerffff .title {
-  font-size: 11px;
+  font-size: 30px;
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .containerffff .title p {
@@ -567,7 +566,18 @@ nav {
 
 
 /* Created by anubhav */
+#dashboard{
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+  padding: 5%;
+  font-weight: 800;
+  text-decoration:underline;
 
+}
+.description>img{
+  height: 85%;
+}
 
 
 
