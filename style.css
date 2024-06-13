@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-image: url("https://www.3eco.com/wp-content/uploads/2024/04/globe-hands-regulatory-trends-tracking.png");
+  background-image: url("assetss/back\ image.jpg");
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -32,7 +32,7 @@ header {
 }
 
 main {
-  background: linear-gradient(90deg,blue 10.19%, #0A0D0E 90.19%);
+  background: black;
 }
 
 /* created by vedant */
@@ -434,7 +434,7 @@ nav {
   height: 99%;
   background-color: #151515;
   border-radius: 5px;
-  color: orange;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,7 +568,7 @@ nav {
 /* Created by anubhav */
 #dashboard{
   text-align: center;
-  color: orange;
+  color: white;
   font-size: 50px;
   padding: 5%;
   font-weight: 800;
