@@ -35,7 +35,7 @@ header {
 }
 
 main {
-  background-color: #f5f7f7;
+  background-color: #fef9ed;
 }
 
 /* created by vedant */
@@ -261,7 +261,7 @@ nav {
   border-radius: 10px;
 }
 
-#navbox>div:nth-of-type(3) button{
+#navbox > div:nth-of-type(3) button {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -276,45 +276,35 @@ nav {
   cursor: pointer;
   outline: none;
 }
-/* @media(396px <= width <=450px){
-  #navbox>div:nth-of-type(3) button{
-    padding: 1.1em 2em;
-  }
-}
-@media(369px <= width <=395px){
-  #navbox>div:nth-of-type(3) button{
-    padding: 1em 1.5em;
-  }
-} */
-#navbox>div:nth-of-type(3) button a{
+
+#navbox > div:nth-of-type(3) button a {
   text-decoration: none;
 }
-#navbox>div:nth-of-type(3) button:hover {
+#navbox > div:nth-of-type(3) button:hover {
   background-color: #fffffff8;
   box-shadow: 0px 15px 20px rgba(254, 254, 255, 0.392);
   color: #090909;
   transform: translateY(-4px);
 }
-#navbox>div:nth-of-type(3)>button:nth-of-type(1):hover {
-  background-color: #fffffff8;
-  box-shadow: 0px 15px 20px rgba(254, 254, 255, 0.333);
-  color: #000000;
-  transform: translateY(-4px);
-}
-#navbox>div:nth-of-type(3)>button:nth-of-type(2):hover {
-  background-color: #d92929f8;
+
+#navbox > div:nth-of-type(3) > button:nth-of-type(1):hover {
+  background-color: #00bfff;
   box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.392);
   color: #ffffff;
   transform: translateY(-5px);
 }
-#navbox>div:nth-of-type(3)>button:nth-of-type(1):active {
+#navbox > div:nth-of-type(3) > button:nth-of-type(2):hover {
+  background-color: #00bfff;
+  box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.392);
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+#navbox > div:nth-of-type(3) > button:nth-of-type(1):active {
   transform: translateY(-1px);
 }
-#navbox>div:nth-of-type(3)>button:nth-of-type(2):active {
+#navbox > div:nth-of-type(3) > button:nth-of-type(2):active {
   transform: translateY(-1px);
 }
-
-
 
 #navbox > div:nth-of-type(1) {
   display: flex;
@@ -401,210 +391,122 @@ nav {
   }
 }
 
-/* Created by manish */
+/* main first of card  created by vedant*/
 
-/* Created by vedant */
-
-.containerffff {
-  max-width: 1240px;
-  margin: auto;
+.cardofmain {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #151515;
+  max-width: 1240px;
+  margin: auto;
+  background-color: #fef9ed;
   border-radius: 20px;
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
-.containerffff .card {
-  height: 500px;
-  border: 1px solid;
-  width: 40%;
-  min-width: 300px;
-  margin: 50px;
+.cardofmain .card-container {
+  perspective: 1000px;
+  width: 320px;
+  height: 300px;
+  margin: 50px auto;
 }
 
-.containerffff .content {
+.cardofmain .card {
   width: 100%;
   height: 100%;
+  position: relative;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
-  transition: transform 300ms;
-  box-shadow: 0px 0px 10px 1px white;
-  border-radius: 5px;
 }
 
-.containerffff .front,
-.containerffff .back {
-  background-color: #151515;
+.cardofmain .card:hover {
+  transform: rotateY(180deg) scale(1.1);
+}
+
+.cardofmain .card .front,
+.cardofmain .card .back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.containerffff .back {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.containerffff .back::before {
-  position: absolute;
-  content: " ";
-  display: block;
-  width: 160px;
-  height: 160%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #ff9966,
-    #ff9966,
-    #ff9966,
-    #ff9966,
-    transparent
-  );
-  animation: rotation_481 5000ms infinite linear;
-}
-
-.containerffff .back-content {
-  position: absolute;
-  width: 99%;
-  height: 99%;
-  background-color: #151515;
-  border-radius: 5px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.containerffff .card:hover .content {
-  transform: rotateY(180deg);
-}
-
-@keyframes rotation_481 {
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  0% {
-    transform: rotateZ(360deg);
-  }
-}
-
-.containerffff .front {
-  transform: rotateY(180deg);
-  color: white;
-}
-
-.containerffff .front .front-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.containerffff .front-content .badge {
-  background-color: #00000055;
-  padding: 2px 10px;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  backdrop-filter: blur(2px);
-  width: fit-content;
-  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 10px solid #fc6350;
 }
 
-.containerffff .description {
-  box-shadow: 0px 0px 10px 5px #00000088;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background-color: #00000099;
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
+.cardofmain .card .front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.containerffff .title {
-  font-size: 30px;
-  max-width: 100%;
+.cardofmain .card .back {
+  background-color: white;
+  transform: rotateY(180deg);
+  border: 10px solid #fc6350;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardofmain .one {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fc6350;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.containerffff .title p {
-  width: 50%;
+.cardofmain .one span {
+  font-size: 25px;
+  font-weight: 600;
 }
 
-.containerffff .card-footer {
-  color: #ffffff88;
-  margin-top: 5px;
-  font-size: 8px;
+.cardofmain .card-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 125%;
+  padding: 0px 30px;
+  text-align: center;
 }
 
-.containerffff .front .img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.cardofmain .card-container a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+  padding: 0px 30px;
+  text-align: center;
 }
 
-.containerffff .circle {
-  width: 90px;
-  height: 90px;
+.cardofmain .back p {
+  font-size: 22px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.cardofmain .two {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  background-color: #ffbb66;
-  position: relative;
-  filter: blur(15px);
-  animation: floating 2600ms infinite linear;
+  background-color: #f6c91d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.containerffff #bottom {
-  background-color: #ff8866;
-  left: 50px;
-  top: 0px;
-  width: 150px;
-  height: 150px;
-  animation-delay: -800ms;
+.cardofmain .two span {
+  font-size: 25px;
+  font-weight: 600;
 }
 
-.containerffff #right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.containerffff .card {
-  font-size: 30px;
-}
+/* ----------------------------- */
 
 /* Created by anubhav */
 #bordertype {
@@ -615,7 +517,7 @@ nav {
 
 #bordertype > div {
   height: 5px;
-  background-color: orangered;
+  background-color: black;
   border-radius: 10px;
   width: 40px;
   margin-top: 22px;
@@ -623,7 +525,8 @@ nav {
 
 #dashboard {
   text-align: center;
-  color: red;
+  color: blue;
+  font-style: italic;
   font-size: 40px;
   padding: 40px 20px 20px 20px;
   font-weight: 800;
@@ -648,15 +551,16 @@ nav {
 
 #bordertypeblog > div {
   height: 5px;
-  background-color: orangered;
+  background-color: black;
   border-radius: 10px;
   width: 40px;
   margin-top: 22px;
 }
 #Popularblog {
   text-align: center;
-  color: red;
+  color: blue;
   font-size: 30px;
+  font-style: italic;
   padding: 40px 20px 20px 20px;
   font-weight: 800;
 }
