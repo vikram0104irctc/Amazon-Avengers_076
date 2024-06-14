@@ -5,7 +5,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  height: 500vh;
 }
 
 header {
@@ -402,6 +401,7 @@ nav {
   margin: auto;
   background-color: #fef9ed;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardofmain .card-container {
@@ -528,7 +528,7 @@ nav {
   color: blue;
   font-style: italic;
   font-size: 40px;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
   font-weight: 800;
 }
 
@@ -631,6 +631,8 @@ footer{
   color: white;
   padding: 10px 0px;
   position: relative;
+  border-top-right-radius: 30px ;
+  border-top-left-radius: 30px;
 }
 footer>.for_head>div>p{
   display: none;
@@ -828,3 +830,91 @@ main{
 /* Created by manish */
 
 /* Created by Vikram */
+
+/* created by ANubhav */
+.banner {
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  padding:1% 0%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #FEF9ED;
+}
+.banner > div {
+  height: 350px;
+  border-radius: 15px;
+  min-width: 300px;
+  padding:15px;
+}
+.banner > div > img {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 15px;
+}
+.income {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  gap: 10px;
+  transform: rotate(180deg);
+}
+.income > div {
+  width: 20%;
+  background-color: #FEF9ED;
+}
+.income > div > div {
+  width: 100%;
+  background-color: black;
+  animation: graph;
+  animation-timeline: view();
+  border-radius: 15px;
+}
+@keyframes graph {
+  40% {
+    height: 0%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.axis {
+  transform: rotate(90deg);
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: 30px;
+}
+#expensetype {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+#expensetype > div {
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 22px;
+ 
+}
+
+#expense {
+  text-align: center;
+  color: blue;
+  font-style: italic;
+  font-size: 40px;
+  padding: 40px 20px 40px 20px;
+  font-weight: 800;
+  
+}
+/* --------------------------------- */
