@@ -9,10 +9,13 @@ body {
 }
 
 header {
-  background-image: url("assetss/back\ image.jpg");
+  background-image: url("assetss/back\ image.webp");
   background-size: cover;
+  background-position: center;
   background-position: top;
   width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .for_head {
@@ -32,7 +35,7 @@ header {
 }
 
 main {
-  background: black;
+  background-color: #f5f7f7;
 }
 
 /* created by vedant */
@@ -106,7 +109,8 @@ div#pos > div p {
   text-align: center;
 }
 
-#firstbtn {
+#firstbtn,
+.navbbb {
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
@@ -229,6 +233,8 @@ div#pos > div h2 {
   }
   100% {
     background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 nav {
@@ -254,23 +260,62 @@ nav {
   width: 100px;
   border-radius: 10px;
 }
-#navbox > div:nth-of-type(3) button {
-  padding: 10px 15px;
-  border-radius: 30px;
-  color: rgb(251, 251, 251);
+
+#navbox>div:nth-of-type(3) button{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  min-width: 80px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+/* @media(396px <= width <=450px){
+  #navbox>div:nth-of-type(3) button{
+    padding: 1.1em 2em;
+  }
+}
+@media(369px <= width <=395px){
+  #navbox>div:nth-of-type(3) button{
+    padding: 1em 1.5em;
+  }
+} */
+#navbox>div:nth-of-type(3) button a{
+  text-decoration: none;
+}
+#navbox>div:nth-of-type(3) button:hover {
+  background-color: #fffffff8;
+  box-shadow: 0px 15px 20px rgba(254, 254, 255, 0.392);
+  color: #090909;
+  transform: translateY(-4px);
+}
+#navbox>div:nth-of-type(3)>button:nth-of-type(1):hover {
+  background-color: #fffffff8;
+  box-shadow: 0px 15px 20px rgba(254, 254, 255, 0.333);
+  color: #000000;
+  transform: translateY(-4px);
+}
+#navbox>div:nth-of-type(3)>button:nth-of-type(2):hover {
+  background-color: #d92929f8;
+  box-shadow: 0px 15px 20px rgba(255, 0, 0, 0.392);
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+#navbox>div:nth-of-type(3)>button:nth-of-type(1):active {
+  transform: translateY(-1px);
+}
+#navbox>div:nth-of-type(3)>button:nth-of-type(2):active {
+  transform: translateY(-1px);
 }
 
-#navbox > div:nth-of-type(3) > button:nth-of-type(1) {
-  border: 2px solid rgba(160, 160, 160, 0.79);
-  background-color: rgba(153, 153, 153, 0.477);
-}
-#navbox > div:nth-of-type(3) > button:nth-of-type(2) {
-  border: 2px solid rgba(160, 160, 160, 0.79);
-  background-color: rgba(153, 153, 153, 0.477);
-}
-#navbox > div:nth-of-type(3) button:hover {
-  background-color: rgba(94, 94, 94, 0.477);
-}
+
+
 #navbox > div:nth-of-type(1) {
   display: flex;
   gap: 10px;
@@ -562,36 +607,61 @@ nav {
 }
 
 /* Created by anubhav */
+#bordertype {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bordertype > div {
+  height: 5px;
+  background-color: orangered;
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 22px;
+}
+
 #dashboard {
   text-align: center;
-  color: white;
-  font-size: 50px;
-  padding: 5%;
+  color: red;
+  font-size: 40px;
+  padding: 40px 20px 20px 20px;
   font-weight: 800;
-  text-decoration: underline;
 }
+
 .description > img {
   height: 85%;
 }
 
 /* Created by manish */
-
-/* Created by manish */
 .blogme {
   max-width: 1240px;
-  margin: 100px auto;
-  padding: 30px 0px;
-  /* background-color: #af40ff; */
+  margin: 0px auto;
+  padding: 0px 0px;
 }
-.blogme > p {
+
+#bordertypeblog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bordertypeblog > div {
+  height: 5px;
+  background-color: orangered;
+  border-radius: 10px;
+  width: 40px;
+  margin-top: 22px;
+}
+#Popularblog {
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
+  color: red;
+  font-size: 30px;
+  padding: 40px 20px 20px 20px;
+  font-weight: 800;
 }
 .blogcards {
   margin: auto;
-  /* border: 2px solid; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
@@ -619,10 +689,15 @@ nav {
   justify-content: space-between;
   margin: 5px 0px;
 }
+
+.blogcards a {
+  color: black;
+}
 .blogcards > div > div:nth-of-type(2) > p:nth-of-type(1) {
   background-color: gray;
+  border-radius: 5px;
   color: white;
-  padding: 1px;
+  padding: 2px;
   margin: 0%;
 }
 .blogcards > div > div:nth-of-type(2) > p:nth-of-type(2) {
