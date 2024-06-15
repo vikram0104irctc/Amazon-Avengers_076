@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #bar {
+      max-width: 250px;
+      background-color: black;
+      opacity: 90%;
+      height: 95vh;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      border-radius: 20px;
+      position: fixed;
+    }
+    #bar > img {
+      width: 60%;
+    }
+    .menus {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      width: 80%;
+      height: 40px;
+      align-content: center;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .menus:hover {
+      background-color: white;
+      color: black;
+    }
+    #content {
+      margin-left: 250px;
+      padding: 3%;
+      display: flex;
+      flex-direction: column;
+    }
+    #top {
+      font-size: 30px;
+    }
+    h6{
+      font-size: 30px;
+      margin: 0%;
+    }
+    .income {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  gap: 10px;
+  transform: rotate(180deg);
+}
+.income > div {
+  width: 20%;
+  background-color:white;
+}
+.income > div > div {
+  width: 100%;
+  background-color: black;
+  animation: graph 3s forwards;
+  border-radius: 15px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes graph {
+  40% {
+    height: 0%;
+  }
+  80% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+h5{
+  transform: rotate(90deg);
+  font-size: 17px;
+}
+@media (width<750px){
+  .income {
+  transform: rotate(-90deg);
+  margin-top: 150px;
+  }
+}
+#sec1{
+  display: flex;
+  width: 100vw;
+}
+  </style>
+  <body>
+    <div id="bar">
+      <img
+        src="./Amazon-Avengers_076/assetss/Screenshot (122)-Photoroom.png"
+        alt=""
+      />
+      <a href="" class="menus"><img height="30px" width="30px" style="margin-right: 10px;" src="./Icons/home-1-svgrepo-com.svg" alt="">DashBoard</a
+      ><a href="" class="menus">Transaction</a
+      ><a href="" class="menus">Payments</a><a href="" class="menus">Cards</a
+      ><a href="" class="menus">Insights</a
+      ><a href="" class="menus">Settings</a>
+    </div>
+    <div id="content">
+      <div id="top">DashBoard</div>
+      <div id="sec1">
+        <div style="max-width: 700px; height: fit-content;">
+          <div style="display: flex; justify-content: space-between; margin: 20px;"><span><h6>$ 3,568</h6><p>Balance</p></span><span><h6>$ 421</h6><p>Income</p></span><span><h6>$ 164</h6><p>Expenses</p></span><span><h6>$ 256</h6><p>Savings</p></span></div>
+          <div style="width: 700px; height: 400px; min-width: 300px;">
+            <div class="income">
+              <div style="height: 25%"><div><h5>Dec</h5></div></div>
+              <div style="height: 55%"><div><h5>Nov</h5></div></div>
+              <div style="height: 95%"><div><h5>Oct</h5></div></div>
+              <div style="height: 45%"><div><h5>Sep</h5></div></div>
+              <div style="height: 75%"><div><h5>Aug</h5></div></div>
+              <div style="height: 55%"><div><h5>July</h5></div></div>
+              <div style="height: 95%"><div><h5>Jun</h5></div></div>
+              <div style="height: 45%"><div><h5>May</h5></div></div>
+              <div style="height: 65%"><div><h5>Apr</h5></div></div>
+              <div style="height: 35%"><div><h5>Mar</h5></div></div>
+              <div style="height: 25%"><div><h5>Feb</h5></div></div>
+              <div style="height: 95%"><div><h5>Jan</h5></div></div>
+            </div>
+        </div>
+      </div>
+      <div style="width: 500px;"><h6 style="width: 70%; text-align: left;">My Card</h6><button>Add Card</button></div>
+      <div id="sec2">
+      </div>
+    </div>
+  </body>
+</html>
