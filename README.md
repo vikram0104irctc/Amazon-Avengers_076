@@ -34,7 +34,7 @@ Frontend
 
 ## Deplolyed App
 
-Frontend: https://deployed-site.whatever
+Frontend: https://vikram0104irctc.github.io/Amazon-Avengers_076/
 
 ## Directory Structure
 
@@ -53,11 +53,11 @@ Amazon-Avengers_076/
 
 ## Video Walkthrough of the project
 
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+https://www.youtube.com/watch?v=HaXv-X8oRPY
 
 ## Video Walkthrough of the codebase
 
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+https://www.youtube.com/watch?v=chT1JVHWA18
 
 ## Features
 
@@ -78,7 +78,7 @@ Thank you for coming to Budget Buddy: your ultimate money management solution. H
 Creating Your Account
 Step 1: Join through Google Accounts
 
-<!-- Visit our website: Visit http://[Insert Your Website Address Here].----------------------------------------------------------------------- -->
+https://vikram0104irctc.github.io/Amazon-Avengers_076/
 
 Click on "Sign Up": On the homepage, there is a button labelled ‘Sign Up’, which, when clicked, will lead to the creation of an account.
 Choose Gmail Sign-Up: Check on the box where you are asked to sign up using your Google Account.
