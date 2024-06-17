@@ -4,10 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign up-Budget Buddy</title>
+  <link rel="icon" href="assetss/logoicons.webp" type="image/x-icon">
+  <meta name="description" content="We are providing you to track your all financial transaction and save your money">
+  <title>Sign Up</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        filter: invert(100%) hue-rotate(180deg);
+      }
+
+      html {
+        background-color: #111;
+      }
+
+      img,
+      video,
+      iframe,
+      svg {
+        filter: invert(100%) hue-rotate(180deg);
+      }
+
+      video:fullscreen {
+        filter: none;
+      }
+
+      .icon {
+        filter: invert(15%) hue-rotate(180deg);
+      }
+
+      pre {
+        filter: invert(6%);
+      }
+
+      li ::marker {
+        color: #666;
+      }
+    }
+
     body {
       padding: 0;
       margin: 0;
@@ -109,7 +144,7 @@
     }
 
     .form label .input+span {
-      color: rgba(255, 255, 255, 0.5);
+      color: #ffff;
       position: absolute;
       left: 10px;
       top: 0px;
@@ -140,7 +175,7 @@
       outline: none;
       padding: 10px;
       border-radius: 10px;
-      color: #fff;
+      color: black;
       font-size: 16px;
       transform: 0.3s ease;
       background-color: #00bfff;
@@ -168,7 +203,7 @@
   <div class="container">
     <form class="form">
       <p class="title">Register</p>
-      <p class="message">Signup now and get full access to our app.</p>
+      <p class="message" style="color: #ffff;">Signup now and get full access to our app.</p>
       <div class="flex" style="gap: 10px">
         <label>
           <input class="input" type="text" placeholder="" required="" />
@@ -196,9 +231,9 @@
       </label>
       <button class="submit">Submit</button>
       <button class="submit">
-        <a href="index.html" style="text-decoration: none; color: white">Home</a>
+        <a href="index.html" style="text-decoration: none; ">Home</a>
       </button>
-      <p class="signin">
+      <p class="signin" style="color: #ffff;">
         Already have an acount ? <a href="login.html">Signin</a>
       </p>
     </form>
