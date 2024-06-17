@@ -1,12 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  html {
+    background-color: #111;
+  }
+  img,
+  video,
+  iframe,
+  svg {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  video:fullscreen {
+    filter: none;
+  }
+  .icon {
+    filter: invert(15%) hue-rotate(180deg);
+  }
+  pre {
+    filter: invert(6%);
+  }
+  li ::marker {
+    color: #666;
+  }
+}
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body{
+body {
   background-color: rgb(239, 239, 239);
 }
 
@@ -31,7 +58,7 @@ body{
   color: white;
   background-color: black;
 }
-.body > div:nth-of-type(2){
+.body > div:nth-of-type(2) {
   grid-area: b;
 }
 #sidehead {
@@ -44,7 +71,7 @@ body{
   align-items: center;
   gap: 5px;
 }
-#sidehead > div:nth-of-type(1)>img{
+#sidehead > div:nth-of-type(1) > img {
   width: 80px;
 }
 #sidehead > div:nth-of-type(2) {
@@ -172,7 +199,7 @@ body{
   #sidehead a {
     display: none;
   }
-  #sidehead > div:nth-of-type(1)>img{
+  #sidehead > div:nth-of-type(1) > img {
     width: 40px;
   }
   #sidehead p {
@@ -184,13 +211,12 @@ body{
   #sidefoot p {
     display: none;
   }
-  #amount>#vikram>span>h6{
+  #amount > #vikram > span > h6 {
     font-size: 16px;
   }
 }
 
-
-#centerpart{
+#centerpart {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: start;
@@ -198,58 +224,56 @@ body{
   padding: 20px;
   background-color: rgb(239, 239, 239);
 }
-@media(width <= 1140px){
-    #centerpart{
-      grid-template-columns: repeat(1, 1fr);
-    }
+@media (width <= 1140px) {
+  #centerpart {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* graph */
 
-#amount>#vikram{
+#amount > #vikram {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  
 }
-#amount>#vikram>span{
+#amount > #vikram > span {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#amount>#vikram>span>h6{
+#amount > #vikram > span > h6 {
   font-size: 20px;
   display: inline-flex;
   align-items: center;
 }
 
-
-#centerpart>div:nth-of-type(1)>p{
+#centerpart > div:nth-of-type(1) > p {
   font-size: 32px;
   font-weight: 700;
 }
-#centerpart>div:nth-of-type(1){
+#centerpart > div:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
-  
 }
-#centerpart>div:nth-of-type(1)>div:nth-of-type(1){
+#centerpart > div:nth-of-type(1) > div:nth-of-type(1) {
   max-width: 600px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   padding: 20px;
   border-radius: 20px;
   margin: 0px auto;
   background-color: white;
 }
-#centerpart>div:nth-of-type(1)>div:nth-of-type(2) {
-  
+#centerpart > div:nth-of-type(1) > div:nth-of-type(2) {
   max-width: 600px;
   height: 300px;
   padding: 20px;
   border-radius: 20px;
   margin: 0px auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: white;
 }
 .income {
@@ -258,12 +282,10 @@ body{
   display: flex;
   gap: 10px;
   transform: rotate(180deg);
-  }
-  .income h5{
-    transform: rotate(90deg) translatex(15px);
-    
-
-  }
+}
+.income h5 {
+  transform: rotate(90deg) translatex(15px);
+}
 .income > div {
   width: 20%;
   background-color: white;
@@ -272,12 +294,16 @@ body{
   width: 30px;
   background-color: rgb(69, 140, 77);
   animation: graph 2s forwards;
-  border-radius: 0px 0px 10px 10px ;
+  border-radius: 0px 0px 10px 10px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 @keyframes graph {
   40% {
@@ -292,7 +318,7 @@ body{
 }
 /* graph */
 /* card */
-#cardsec{
+#cardsec {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +335,7 @@ body{
 
 .heading_8264 {
   position: absolute;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-size: 0.5em;
   top: 2em;
   left: 18.6em;
@@ -336,7 +362,7 @@ body{
 .number {
   position: absolute;
   font-weight: bold;
-  font-size: .6em;
+  font-size: 0.6em;
   top: 8.3em;
   left: 1.6em;
 }
@@ -345,7 +371,7 @@ body{
   position: absolute;
   font-weight: bold;
   top: 635.8em;
-  font-size: .01em;
+  font-size: 0.01em;
   left: 140.3em;
 }
 
@@ -386,7 +412,7 @@ body{
   width: 8em;
   height: 0.8em;
   top: 5em;
-  left: .8em;
+  left: 0.8em;
   border-radius: 2.5px;
 }
 
@@ -403,7 +429,7 @@ body{
 .code {
   font-weight: bold;
   text-align: center;
-  margin: .2em;
+  margin: 0.2em;
   color: black;
 }
 
@@ -420,8 +446,9 @@ body{
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -434,68 +461,72 @@ body{
 }
 
 .flip-card-front {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
   background-color: #c04848;
 }
 
 .flip-card-back {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
   background-color: #c04848;
   transform: rotateY(180deg);
 }
 /* card */
 /* quick transaction */
-#quicktra>div>p{
+#quicktra > div > p {
   font-size: 22px;
   font-weight: 600;
 }
-#quicktra>div{
+#quicktra > div {
   width: 500px;
   padding: 20px;
   border-radius: 20px;
   margin: 0px auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: white;
 }
-#quicktra>div>div{
+#quicktra > div > div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-#quicktra>div>div>span{
+#quicktra > div > div > span {
   width: 60px;
-      display:block;
-      font-size: 15px;
-      text-align: center;
+  display: block;
+  font-size: 15px;
+  text-align: center;
 }
-#quicktra>div>div>span>img{
+#quicktra > div > div > span > img {
   width: 50px;
-      margin: auto;
-      background-color: white;
-      border-radius: 30%;
+  margin: auto;
+  background-color: white;
+  border-radius: 30%;
 }
 /* quick transaction */
 /* transaction history */
-#history{
+#history {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#history>div{
+#history > div {
   max-width: 600px;
   padding: 20px;
   border-radius: 20px;
   margin: 0px auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: white;
 }
-#history>div>p{
+#history > div > p {
   font-size: 22px;
   font-weight: 600;
 }
@@ -510,17 +541,18 @@ body{
 }
 /* transaction history */
 /* goal */
-#goalset{
+#goalset {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#goalset>div{
+#goalset > div {
   max-width: 500px;
   padding: 20px;
   border-radius: 20px;
   margin: 0px auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -532,16 +564,15 @@ body{
   min-width: 300px;
   max-width: 450px;
   gap: 10px;
-
 }
-#goals > div:nth-of-type(1){
+#goals > div:nth-of-type(1) {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 10px;
   align-items: center;
 }
-#goals > div:nth-of-type(1)>p{
+#goals > div:nth-of-type(1) > p {
   font-size: 22px;
   font-weight: 600;
 }
@@ -549,22 +580,22 @@ body{
   width: 100%;
   margin: auto;
   border-radius: 10px;
-  background-color:black;
+  background-color: black;
   color: white;
-  padding:10px;
+  padding: 10px;
 }
 #goals > div:nth-of-type(3) {
   width: 100%;
   margin: auto;
   border-radius: 10px;
-  background-color:black;
+  background-color: black;
   color: white;
-  padding:10px;
+  padding: 10px;
 }
-#goals>div>img{
+#goals > div > img {
   width: 50px;
 }
-#goals button{
+#goals button {
   width: 100px;
   height: 35px;
   background-color: black;

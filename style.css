@@ -7,6 +7,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  html {
+    background-color: #111;
+  }
+  img,
+  video,
+  iframe,
+  svg {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  video:fullscreen {
+    filter: none;
+  }
+  .icon {
+    filter: invert(15%) hue-rotate(180deg);
+  }
+  pre {
+    filter: invert(6%);
+  }
+  li ::marker {
+    color: #666;
+  }
+}
+
 #headparall {
   position: relative;
   width: 100%;
@@ -293,6 +320,7 @@ nav {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  padding: 10px;
 }
 
 #navbox > div:nth-of-type(3) button a {

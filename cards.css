@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  html {
+    background-color: #111;
+  }
+  img,
+  video,
+  iframe,
+  svg {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+  video:fullscreen {
+    filter: none;
+  }
+  .icon {
+    filter: invert(15%) hue-rotate(180deg);
+  }
+  pre {
+    filter: invert(6%);
+  }
+  li ::marker {
+    color: #666;
+  }
+}
+
 * {
   margin: 0%;
   padding: 0%;
